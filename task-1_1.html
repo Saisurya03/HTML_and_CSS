@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>
+
+<p id="obj"></p></h2>
+
+<script>
+var i, details = "";
+var student = {
+    name:"Saisurya",
+    college:"VVP",
+    city:"Rajkot",
+    branch:"Computer"};
+
+for (i in student) {
+  details += student[i] + " ";
+};
+
+document.getElementById("obj").innerHTML = details;
+</script>
+
+</body>
+</html>

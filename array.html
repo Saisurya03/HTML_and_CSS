@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Array methods</title>
+</head>
+<body>
+<b>join:</b><p id="test1"></p>
+<b>pop:</b><p id="test2"></p>
+<b>push:</b><p id="test3"></p>
+<b>shift:</b><p id="test4"></p>
+<b>unshift:</b><p id="test5"></p>
+<b>slice:</b><p id="test6"></p>
+<b>concatinate:</b><p id="test7"></p>
+
+<script>
+    var colors = ["violet", "indigo", "blue", "green", "yellow", "orange", "red"];
+    document.getElementById("test1").innerHTML = colors.join(", ");
+    var red = colors.pop();
+    document.getElementById("test2").innerHTML = colors.join(", ");
+    var add = colors.push("red");
+    document.getElementById("test3").innerHTML = colors.join(", ");
+    colors.shift();
+    document.getElementById("test4").innerHTML = colors.join(", ");
+    colors.unshift("violet");
+    document.getElementById("test5").innerHTML = colors.join(", ");
+    colors.splice(1, 2, "teal");
+    document.getElementById("test6").innerHTML = colors.join(", ");
+    var add = ["purple", "teal"];
+    var colors1 = colors.concat(add);
+    document.getElementById("test7").innerHTML = colors1.join(", ");
+</script>
+</body>
+</html>

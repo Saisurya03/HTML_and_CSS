@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+<input type="text" size="40" onkeypress="key(event)">
+<script>
+function key() {
+    var x = event.keyCode;
+    document.getElementById("demo").innerHTML = x;
+}
+
+</script>

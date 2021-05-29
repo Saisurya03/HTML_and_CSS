@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>String</title>
+</head>
+<body>
+<b>length:</b><p id="test1"></p>
+<b>Index:</b><p id="test2"></p>
+<b>slice:</b><p id="test3"></p>
+<b>substring:</b><p id="test4"></p>
+<b>replace:</b><p id="test5"></p>
+<b>uppercase:</b><p id="test6"></p>
+<b>lowercase:</b><p id="test7"></p>
+<b>Concatenate:</b><p id="test8"></p>
+
+<script>
+    var s = "This is a test string."
+    var len = s.length;
+    
+    document.getElementById("test1").innerHTML = len;   
+    document.getElementById("test2").innerHTML = s.indexOf("i");
+    document.getElementById("test3").innerHTML = s.slice(0,5);
+    document.getElementById("test4").innerHTML = s.substr(1);
+    document.getElementById("test5").innerHTML = s.replace("This", "That");
+    document.getElementById("test6").innerHTML = s.toUpperCase();
+    document.getElementById("test7").innerHTML = s.toLowerCase();
+    document.getElementById("test8").innerHTML = s.concat("s");
+</script>
+</body>
+</html>

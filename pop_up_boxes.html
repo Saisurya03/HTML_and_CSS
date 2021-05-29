@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Pop Up Boxes</title>
+</head>
+<body>
+<button style="background-color:teal; color:white; border:none; border-radius:5px" onclick=alert("Hello")>Alert</button><br>
+<p></p>
+<button style="background-color:teal; color:white; border:none; border-radius:5px" onclick=test()>Confirm Box</button><br>
+<p id="conf"></p>
+<button style="background-color:teal; color:white; border:none; border-radius:5px" onclick=test2()>Prompt</button><br>
+<p id="prompt1"></p>
+
+
+
+<script>
+    function test(){
+            if(confirm("Do you wish to continue?")){
+                document.getElementById("conf").innerHTML = "You pressed Ok";
+            }
+            else{
+                document.getElementById("conf").innerHTML = "You pressed cancel";
+            }
+    }
+    function test2(){
+            var name = prompt("Enter your name")
+            if(name!=null){
+                document.getElementById("prompt1").innerHTML = "Hello " + name + "!";
+            }
+    }
+</script>
+</body>
+</html>

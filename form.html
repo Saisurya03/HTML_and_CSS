@@ -1,0 +1,55 @@
+<form>
+  <fieldset>
+    <legend><h1>Student Registration</h1></legend><br/>
+    <label for="fname"><b>First name:</b></label>
+    <input type="text" id="fname" name="fname"><br><br>
+    
+    <label for="lname"><b>Last name:</b></label>
+    <input type="text" id="lname" name="lname"><br><br>
+    
+    <label for="dept"><b>Department:</b></label>
+    <select name="dept" id="dept">
+        <optgroup label="Soft branch">
+            <option value="Computer">Computer</option>
+            <option value="It">IT</option>
+            <option value="Electrical">Electrical</option>
+            <option value="EC">EC</option>
+        </optgroup>
+        <optgroup label="Hard branch">
+            <option value="Civil">Civil</option>
+            <option value="Mechanical">Mechanical</option>
+        </optgroup>
+    </select><br><br>
+
+    <label for="enroll"><b>Enrollment:</b></label>
+    <input type="text" id="enroll" name="enroll"><br><br>
+    
+    <label for="gender"><b>Gender:</b></label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+    <label for="hobby"><b>Hobby:</b></label><br>
+        <input type="checkbox" id="acting" name="acting">
+        <label for="acting">Acting</label><br>
+        <input type="checkbox" id="reading" name="reading">
+        <label for="reading">Reading</label><br>
+        <input type="checkbox" id="painting" name="painting">
+        <label for="painting">Painting</label><br>
+        <input type="checkbox" id="sports" name="sports">
+        <label for="sports">Sports</label><br><br>
+
+    <label for="addr"><b>Address:</b></lable></br>
+    <textarea id="addr" name="addr" rows="4" cols="70">
+    </textarea><br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset">
+
+  </fieldset>
+</form>
